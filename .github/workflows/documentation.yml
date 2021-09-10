@@ -41,7 +41,7 @@ jobs:
           USE_SSH: true
           GIT_USER: git
         run: |
-          ls -la
+          cd docusaurus-test
           if [ -e yarn.lock ]; then
             yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
